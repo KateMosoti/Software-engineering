@@ -1,0 +1,33 @@
+<html>
+<head>
+    <title>Railway Reservation Form</title>
+</head>
+<body>
+    <h2>Railway Reservation Form</h2>
+    <form action="process_reservation.php" method="post">
+        <label for="passengerName">Passenger Name:</label>
+        <input type="text" id="passengerName" name="passengerName" required><br><br>
+
+        <label for="journeyDate">Journey Date:</label>
+        <input type="date" id="journeyDate" name="journeyDate" required><br><br>
+
+        <label for="departureStation">Departure Station:</label>
+        <input type="text" id="departureStation" name="departureStation" required><br><br>
+
+        <label for="arrivalStation">Arrival Station:</label>
+        <input type="text" id="arrivalStation" name="arrivalStation" required><br><br>
+
+        <label for="seatClass">Seat Class:</label>
+        <select id="seatClass" name="seatClass">
+            <option value="Economy">Economy</option>
+            <option value="Business">Business</option>
+            <option value="First Class">First Class</option>
+        </select><br><br>
+
+        <label for="ticketQuantity">Number of Tickets:</label>
+        <input type="number" id="ticketQuantity" name="ticketQuantity" min="1" required><br><br>
+
+        <input type="submit" value="Submit Reservation">
+    </form>
+</body>
+</html>
